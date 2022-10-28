@@ -21,7 +21,7 @@ public class Main {
 		try {
 
 			// Get the image
-			String imagePath = "./image.jpg";
+			String imagePath = "./image.png";
 			File imageFile = new File(imagePath);
 			BufferedImage image = ImageIO.read(imageFile);
 
