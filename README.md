@@ -13,6 +13,8 @@ This Java program converts an image to ascii art.
 ## **TODO**
 - [x] Generate ascii art from image
 - [x] save to an output file
+- [ ] You can resize output
 - [ ] Double the width of the ascii
 - [ ] Also use box drawing characters
+- [ ] Make transparent stuff an empty character
 - [ ] Put it in a GUI where you can upload the image and save to clipboard
