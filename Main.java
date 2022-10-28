@@ -18,6 +18,9 @@ public class Main {
 		
 		String output = "";
 
+		// Start the timer
+		long startTime = System.currentTimeMillis();
+
 		try {
 
 			// Get the image
@@ -52,6 +55,14 @@ public class Main {
 					int asciiIndex = (int) (brightness * (asciiLength / maxBrightness));
 					char asciiCharacter = asciiCharacters.charAt(asciiIndex);
 					output += asciiCharacter;
+
+					// for (int i = 0; i < 100; i++) {
+    
+					// 	if (i % 2 == 1) {
+					// 		System.out.println(i);
+					// 	}
+					// }
+					
 				}
 
 				// Add a new line
@@ -64,8 +75,13 @@ public class Main {
 		}
 
 		System.out.println("Generated ascii");
+
 		addOutput(output);
 		System.out.println("Wrote to file");
+
+		// Stop the timer
+		long endTime = System.currentTimeMillis();
+		System.out.println("\n\nTotal time: " + (endTime - startTime) + "ms");
 		
 	}
 
